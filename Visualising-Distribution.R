@@ -40,3 +40,5 @@ friends %>% #this basically means "and then"
   filter(age < 20) %>% #filters by condition specified in brackets
   arrange(age) #arranged in ascending order
   
+try <- "something"
+try
