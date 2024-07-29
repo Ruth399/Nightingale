@@ -40,5 +40,16 @@ friends %>% #this basically means "and then"
   filter(age < 20) %>% #filters by condition specified in brackets
   arrange(age) #arranged in ascending order
   
-try <- "something"
-try
+library(tidyverse)
+
+install.packages("palmerpenguins")
+library(palmerpenguins)
+
+#conflicts with tidyverse package means that when calling filter() and lag() R wil use the dplyr version by default, not stats
+#if you want to specifically call filter and lag functions from stats package, use stats::filter() or stats::lag()
+
+
+
+
+
+
