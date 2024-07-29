@@ -48,8 +48,15 @@ library(palmerpenguins)
 #conflicts with tidyverse package means that when calling filter() and lag() R wil use the dplyr version by default, not stats
 #if you want to specifically call filter and lag functions from stats package, use stats::filter() or stats::lag()
 
+install.packages("ggthemes")
 
+#data frame > 2D table where columns are variables and rows are observations 
 
+package_info <- installed.packages()["palmerpenguins",]
+package_info["LibPath"]
 
+#to find a specific package / the default location where packages are stored - user terminal cd and open to access library
+#use cmd+enter to find more about a specific function in terminal
 
+.libPaths()
 
