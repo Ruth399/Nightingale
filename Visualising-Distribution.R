@@ -60,3 +60,13 @@ package_info["LibPath"]
 
 .libPaths()
 
+#a value is the state of a variable; observation is a set of measurements made under similar conditions - contain several values, each associated with a different variable
+#tabular data - set of values, each of which is associated with a variable (column) and observation (row)
+
+penguins
+#glimpse(penguins) <- allows preview of table that would otherwise be too big to view
+View(penguins)
+#R is case sensitive, there is no view function, but there is a View function
+
+
+
