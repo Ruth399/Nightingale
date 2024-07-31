@@ -68,5 +68,6 @@ penguins
 View(penguins)
 #R is case sensitive, there is no view function, but there is a View function
 
+View(penguins)
 
 
