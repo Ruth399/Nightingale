@@ -68,6 +68,14 @@ penguins
 View(penguins)
 #R is case sensitive, there is no view function, but there is a View function
 
-View(penguins)
+?penguins
+#finds information about the package - see in help window
+
+#creating visualization displaying relationship between flipper lengths and body masses of penguins
+
+ggplot(data = penguins)
+
+
+
 
 
