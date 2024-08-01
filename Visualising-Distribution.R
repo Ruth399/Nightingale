@@ -73,8 +73,15 @@ View(penguins)
 
 #creating visualization displaying relationship between flipper lengths and body masses of penguins
 
-ggplot(data = penguins)
+library(tidyverse) 
+library(palmerpenguins)
+palmerpenguins::penguins
 
+ggplot(
+  data = penguins,
+  mapping = aes(x = flipper_length_mm, y = body_mass_g),
+  )
+ 
 
 
 
