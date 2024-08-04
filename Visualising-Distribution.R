@@ -79,15 +79,16 @@ palmerpenguins::penguins
 
 ggplot(
   data = penguins,
-  mapping = aes(x = flipper_length_mm, y = body_mass_g),
+  mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species),
   ) +
   geom_point()
+
  
 #mapping argument of ggplot defines how variables in a dataset are mapped to visual properties (aesthetics) of the plot. 
 #the aes function defines the mapping argument, and the x and y arguments of the aes function establish the axes
 #note - arguments in R have a argument = syntax, functions have function() syntax
-#geom defines which object is used on the plot to represent data - to access use geom_
-
+#geom defines which object is used on the plot to represent data - to access use geom_e.g., boxplot, line, bar()
+#scatter plot is not complete at this point (line 84); however, question of relation between flipper length and body mass is answered
 
  
 
