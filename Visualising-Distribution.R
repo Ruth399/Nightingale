@@ -81,14 +81,17 @@ ggplot(
   data = penguins,
   mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species),
   ) +
-  geom_point()
+  geom_point() + 
+  geom_smooth(method = "lm") + 
 
- 
+  
 #mapping argument of ggplot defines how variables in a dataset are mapped to visual properties (aesthetics) of the plot. 
 #the aes function defines the mapping argument, and the x and y arguments of the aes function establish the axes
 #note - arguments in R have a argument = syntax, functions have function() syntax
 #geom defines which object is used on the plot to represent data - to access use geom_e.g., boxplot, line, bar()
 #scatter plot is not complete at this point (line 84); however, question of relation between flipper length and body mass is answered
+#when a categorical variable is mapped, ggplot2 automatically assigns a unique value of the visual property (color) to each unique level of the variable (species) this is known as SCALING
+#lm = linear model
 
  
 
