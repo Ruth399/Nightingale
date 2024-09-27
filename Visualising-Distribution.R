@@ -82,7 +82,7 @@ ggplot(
   mapping = aes(x = flipper_length_mm, y = body_mass_g, color = species),
   ) +
   geom_point() + 
-  geom_smooth(method = "lm") + 
+  geom_smooth(method = "lm") 
 
   
 #mapping argument of ggplot defines how variables in a dataset are mapped to visual properties (aesthetics) of the plot. 
